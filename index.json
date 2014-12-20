@@ -1,0 +1,172 @@
+{
+    "benchmarks": {
+        "benchmarks.MemSuite.mem_list": {
+            "code": "def mem_list(self):\n    return [0] * 256\n", 
+            "name": "benchmarks.MemSuite.mem_list", 
+            "timeout": 60.0, 
+            "type": "memory", 
+            "unit": "bytes"
+        }, 
+        "benchmarks.TimeSuite.time_iterkeys": {
+            "code": "def time_iterkeys(self):\n    for key in self.d.iterkeys():\n        pass\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.TimeSuite.time_iterkeys", 
+            "number": 0, 
+            "repeat": 3, 
+            "timeout": 60.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "benchmarks.TimeSuite.time_keys": {
+            "code": "def time_keys(self):\n    for key in self.d.keys():\n        pass\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.TimeSuite.time_keys", 
+            "number": 0, 
+            "repeat": 3, 
+            "timeout": 60.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "benchmarks.TimeSuite.time_range": {
+            "code": "def time_range(self):\n    d = self.d\n    for key in range(500):\n        x = d[key]\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.TimeSuite.time_range", 
+            "number": 0, 
+            "repeat": 3, 
+            "timeout": 60.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "benchmarks.TimeSuite.time_xrange": {
+            "code": "def time_xrange(self):\n    d = self.d\n    for key in xrange(500):\n        x = d[key]\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.TimeSuite.time_xrange", 
+            "number": 0, 
+            "repeat": 3, 
+            "timeout": 60.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }
+    }, 
+    "date_to_hash": {
+        "1152569157000": "704d0be6", 
+        "1213267109000": "490b8e2a", 
+        "1290966391000": "2053a967", 
+        "1418950347000": "ae286f34"
+    }, 
+    "machines": {
+        "my-custom-machine-name-for-scipy-benchmarking": {
+            "arch": "x86_64", 
+            "cpu": "Intel(R) Xeon(R) CPU           W3670  @ 3.20GHz", 
+            "machine": "my-custom-machine-name-for-scipy-benchmarking", 
+            "os": "Linux 3.13.0-37-generic", 
+            "ram": "24686536", 
+            "version": 1
+        }
+    }, 
+    "params": {
+        "Cython": [
+            "0.21.1"
+        ], 
+        "Tempita": [
+            "0.5.2"
+        ], 
+        "arch": [
+            "x86_64"
+        ], 
+        "cpu": [
+            "Intel(R) Xeon(R) CPU           W3670  @ 3.20GHz"
+        ], 
+        "machine": [
+            "my-custom-machine-name-for-scipy-benchmarking"
+        ], 
+        "numpy": [
+            "1.8.2"
+        ], 
+        "os": [
+            "Linux 3.13.0-37-generic"
+        ], 
+        "python": [
+            "2.7", 
+            "3.4"
+        ], 
+        "ram": [
+            "24686536"
+        ]
+    }, 
+    "project": "scipy", 
+    "project_url": "http://scipy.org/scipylib/", 
+    "show_commit_url": "http://github.com/scipy/scipy/commit/", 
+    "tags": {
+        "v0.1.0": 997776334000, 
+        "v0.1.1": 997810742000, 
+        "v0.1.2": 997810742000, 
+        "v0.10.0": 1321184037000, 
+        "v0.10.0b1": 1315773794000, 
+        "v0.10.0b2": 1316190391000, 
+        "v0.10.0rc1": 1320352769000, 
+        "v0.10.1": 1330292710000, 
+        "v0.10.1rc1": 1328901883000, 
+        "v0.10.1rc2": 1329666728000, 
+        "v0.11.0": 1348510983000, 
+        "v0.11.0b1": 1339535799000, 
+        "v0.11.0rc1": 1342556008000, 
+        "v0.11.0rc2": 1344797844000, 
+        "v0.12.0": 1365246162000, 
+        "v0.12.0b1": 1361014570000, 
+        "v0.12.0rc1": 1364591458000, 
+        "v0.12.1": 1381266180000, 
+        "v0.13.0": 1382186939000, 
+        "v0.13.0b1": 1377174831000, 
+        "v0.13.0rc1": 1381435522000, 
+        "v0.13.1": 1384626594000, 
+        "v0.13.2": 1386455933000, 
+        "v0.13.3": 1391493657000, 
+        "v0.14.0": 1399112865000, 
+        "v0.14.0b1": 1394927680000, 
+        "v0.14.0rc1": 1396469734000, 
+        "v0.14.0rc2": 1398234320000, 
+        "v0.14.1rc1": 1418577357000, 
+        "v0.15.0b1": 1416782031000, 
+        "v0.15.0rc1": 1418655286000, 
+        "v0.2.0": 1064991141000, 
+        "v0.2.2": 1080942011000, 
+        "v0.3.0": 1082159940000, 
+        "v0.3.2": 1097226913000, 
+        "v0.4.2": 1131777472000, 
+        "v0.4.3": 1133389533000, 
+        "v0.4.4": 1137267282000, 
+        "v0.4.6": 1140351393000, 
+        "v0.4.8": 1142693999000, 
+        "v0.4.9": 1148476057000, 
+        "v0.5.0": 1153921448000, 
+        "v0.5.1": 1157443182000, 
+        "v0.5.2": 1165551859000, 
+        "v0.5.2.1": 1187463466000, 
+        "v0.6.0": 1190448800000, 
+        "v0.7.0": 1235076101000, 
+        "v0.7.0b1": 1227520465000, 
+        "v0.7.0rc1": 1232169385000, 
+        "v0.7.0rc2": 1232695694000, 
+        "v0.7.1": 1252844436000, 
+        "v0.7.1rc1": 1244097697000, 
+        "v0.7.1rc2": 1244188045000, 
+        "v0.7.1rc3": 1244777903000, 
+        "v0.7.2": 1271934000000, 
+        "v0.7.2rc1": 1270736740000, 
+        "v0.7.2rc2": 1271575424000, 
+        "v0.7.2rc3": 1271603220000, 
+        "v0.8.0": 1280155813000, 
+        "v0.8.0b1": 1275663725000, 
+        "v0.8.0rc1": 1278233358000, 
+        "v0.8.0rc2": 1278835148000, 
+        "v0.8.0rc3": 1279192688000, 
+        "v0.9.0": 1298808413000, 
+        "v0.9.0b1": 1292146170000, 
+        "v0.9.0rc1": 1295774973000, 
+        "v0.9.0rc2": 1296402855000, 
+        "v0.9.0rc3": 1297508161000, 
+        "v0.9.0rc4": 1298122355000, 
+        "v0.9.0rc5": 1298194539000
+    }
+}
